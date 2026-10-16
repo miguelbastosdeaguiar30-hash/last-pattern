@@ -1,0 +1,22 @@
+PROJECT: LAST PATTERN — projeto Android para compilar APK no GitHub Actions
+
+COMO USAR PELO CELULAR:
+1. Extraia este ZIP.
+2. Crie um repositório novo no GitHub (ex.: last-pattern-apk).
+3. Envie TODOS os arquivos e pastas deste projeto para a raiz do repositório.
+   Importante: a pasta .github precisa ser enviada também.
+4. Abra a aba Actions do repositório.
+5. Se aparecer um aviso para permitir workflows, permita.
+6. Abra o workflow "Build Android APK" e aguarde ficar verde.
+7. Entre na execução concluída, desça até Artifacts e baixe PROJECT-LAST-PATTERN-APK.
+8. Extraia o APK do ZIP baixado e instale no Android. Talvez seja necessário permitir instalação dessa fonte.
+
+Para compilar novamente:
+- Envie uma alteração ao branch main; ou
+- Actions > Build Android APK > Run workflow.
+
+Detalhes:
+- O jogo HTML fica em app/src/main/assets/index.html.
+- O ícone enviado foi adaptado para o formato quadrado usado pelo Android.
+- O APK gerado é de depuração (debug), adequado para testes e instalação manual.
+- Para publicar na Play Store, será necessário preparar uma versão de lançamento assinada e verificar os requisitos atuais da loja.
